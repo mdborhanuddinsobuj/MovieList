@@ -1,0 +1,89 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link href="Content/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+</head>
+<body class="bg-dark">
+    <nav class="navbar navbar-light navbar-expand-sm" style="background-color:#1a800a">
+        <div class="container">
+            <a class="navbar-brand text-white" href="#">
+                Movie List
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample01"
+                    aria-controls="navbarsExample01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse  text-white" id="navbarsExample01">
+                <ul class="navbar-nav ">
+                    <li class="nav-item">
+                        <a class="nav-link text-white active" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">Service</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#ContactUs.html">Contract</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <hr />
+    <div class="container text-white align-items-center">
+        <form class="row g-3" id="movieForm">
+            <div class="mb-1 col-6">
+                <label>Movie Name</label>
+                <input class="form-control" type="text" id="movieName" />
+            </div>
+            <div class="mb-1 col-6">
+                <label>Director</label>
+                <input class="form-control" type="text" id="director" />
+            </div>
+            <div class="mb-1 col-6">
+                <label>Type</label>
+                <select id="type">
+                    <option selected>Choose Select menu</option>
+                    <option value="Hollywood">Hollywood</option>
+                    <option value="Bollywood">Bollywood</option>
+                    <option value="Tollywood">Tollywood</option>
+                    <option value="Nollywood">Nollywood</option>
+                    <option value="Chaines">Chaines</option>
+                    <option value="Korean">Korean</option>
+                </select>
+            </div>
+            <div class="mb-1 col-6">
+                <label>Rating</label>
+                <input class="form-control" type="text" id="rating" />
+            </div>
+            <!--<div class="mb-1 col-6">-->
+            <!--<input type="submit" value="Add MovieList" class="btn btn-warning" id="btn"/>-->
+            <button type="submit" class="btn btn-warning">Submit</button>
+            <!--</div>-->
+        </form>
+        <table class="table table-bordered text-white mt-5 text-center">
+            <thead>
+                <tr>
+                    <th>Movie Name</th>
+                    <th>Director</th>
+                    <th>Type</th>
+                    <th>Rating</th>
+                </tr>
+            </thead>
+            <tbody id="movieList">
+            </tbody>
+        </table>
+    </div>
+
+
+
+
+    <script src="Scripts/bootstrap.bundle.min.js"></script>
+    <script src="MovieList.js"></script>
+</body>
+</html>
